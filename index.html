@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Barbearia Souza</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="imagem_cortada_circular.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <img src="barb_souza_icone_semfundo.png" alt="" width="60px" height="60px" style="display: flex;">
+            <a id="nome" href="#">Barbearia Souza</a>
+            <nav class="nav">
+                <a href="#atendimento">Atendimento</a>
+                <a href="#abarbearia">A Barbearia</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <a class="btn btn-primary" href="https://sites.appbarber.com.br" target="_blank"
+                rel="noopener">Agende-se</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>
+                    <h1 style="color: chocolate;">CONFORTO</h1>
+                    <h1>CUIDADO <br>& ESTILO É AQUI</h1>
+                    <p class="tagline">Cortes, barba e cuidado completo.</p>
+                    <!-- <a class="btn btn-cta" href="https://sites.appbarber.com.br" target="_blank" rel="noopener">AGENDAR
+                    HORÁRIO</a> -->
+            </div>
+        </section>
+
+        <!-- SERVIÇOS -->
+        <section id="servicos" class="section services">
+            <div class="container">
+                <h1>Serviços</h1>
+
+                <div class="services-grid">
+
+                    <div class="service-card">
+                        <h3>Corte</h3>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>Cabelo e barba</h3>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>Corte infantil</h3>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>Hidratação</h3>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>Sobrancelha</h3>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SOBRE -->
+        <!-- id="abarbearia" class="section about" -->
+
+        <div class="carousel">
+            <div class="track">
+                <img src="pessoa1.jpg" alt="">
+                <img src="pessoa2.jpg" alt="">
+                <img src="pessoa3.jpg" alt="">
+                <img src="pessoa4.jpg" alt="">
+                <img src="pessoa5.jpg" alt="">
+
+                <img src="pessoa1.jpg" alt="">
+                <img src="pessoa2.jpg" alt="">
+                <img src="pessoa3.jpg" alt="">
+                <img src="pessoa4.jpg" alt="">
+                <img src="pessoa5.jpg" alt="">
+            </div>
+        </div>
+
+        <section id="abarbearia">
+            <div class="texto">
+                <h2>A Barbearia</h2>
+                <p>
+                    A barbearia se desenvolveu com a proposta de unir um ambiente moderno a um atendimento realmente
+                    profissional. Nosso foco sempre foi oferecer mais do que um simples corte: entregamos cuidado,
+                    estilo e uma experiência completa. <br>
+
+                    Aqui você encontra cortes tradicionais e atuais, serviços de barba com acabamento preciso e um
+                    espaço pensado para que cada cliente se sinta à vontade. Valorizamos qualidade, higiene,
+                    pontualidade e aquele clima de conversa boa que toda barbearia de verdade precisa ter. <br>
+                    <br>
+                    <strong>Nossa missão é simples: fazer você sair melhor do que entrou no visual e na
+                        confiança.</strong>
+                </p>
+            </div>
+        </section>
+
+        <!-- class="container about-inner" -->
+
+        <!-- UNIDADES -->
+        <section id="atendimento" class="section locations">
+            <div class="container">
+                <h2>Unidade e Atendimento</h2>
+
+                <div class="locations-grid">
+                    <div class="location">
+                        <h3>Monte Santo/BA</h3>
+                        <p><strong>Telefone:</strong> (00) 00000-0000</p>
+                        <p><strong>Endereço:</strong> Av. Dep. Luiz Eduardo Magalhães – Centro,</p>
+                        <p><strong>Horário:</strong> Seg–Sáb: 08h–20h</p>
+                        <a class="btn btn-small" href="https://sites.appbarber.com.br" target="_blank"
+                            rel="noopener">Agende</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato" class="section contact">
+            <div class="container">
+                <h2>Contato</h2>
+                <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdLrUWc745oyoFO9YKVeBZKsarkvqNCEG4Ssm0UP3EK4AGXXw/viewform?embedded=true" 
+                 style="align-items: center;" width="340" height="350" frameborder="0" 
+                marginheight="0" marginwidth="0">Loading…
+            </iframe> -->
+                <form id="contactForm" class="contact-form" action="#" method="post" onsubmit="return false;">
+                    <label>
+                        Nome
+                        <input type="text" name="nome" placeholder="Insira o seu nome aqui" required>
+                    </label>
+
+                    <label>
+                        Email
+                        <input type="email" name="email" placeholder="Insira o seu email aqui" required>
+                    </label>
+
+                    <label>
+                        Mensagem
+                        <textarea name="mensagem" rows="4" placeholder="Descreva oque deseja" required></textarea>
+                    </label>
+
+                    <div class="form-actions">
+                        <button class="btn" type="submit">ENVIAR</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>© <span id="year"></span> Barbearia Souza</div>
+            <div class="socials">
+                <a href="https://www.instagram.com/barbeariasouza210?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    aria-label="Facebook">
+                    <img src="https://imgs.search.brave.com/sblims6PNcHwma5gmYJm9AmoAEoPmSNfxVC76QG2mew/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNDUv/OTM0LzI0My9zbWFs/bC9pbnN0YWdyYW0t/bG9nby1pY29uLXRy/YW5zcGFyZW50LWJh/Y2tncm91bmQtZnJl/ZS1wbmcucG5n"
+                        alt="símbolo do instagram" height="50px" width="50px"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // ano no footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // formulário dummy: você vai trocar pelo back ou integração
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Aqui você integra com backend ou enviará por email.');
+        });
+    </script>
+
+</body>
+
+</html>
