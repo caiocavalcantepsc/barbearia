@@ -312,6 +312,8 @@ html, body {
 
     .hero {
         min-height: 50vh
+        background-image: url('fundo\ vertical.jpg')
     }
 }
+
 
