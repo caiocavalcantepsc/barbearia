@@ -218,13 +218,13 @@ body {
 }
 
 .service-card {
-    min-height: 120px;
+    min-height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
-    border: 4px rgb(0, 0, 0);
-    background-color: none;
+    border: 4px rgb(255, 0, 0);
+    background-color: transparent;
     font-weight: 900;
     /* box-shadow: 0 0 15px #ff9900; */
     transition: transform .3s ease, box-shadow .3s ease;
@@ -233,8 +233,6 @@ body {
     transition: transform .3s ease, text-shadow .3s ease;
     color: white;
     text-shadow: 0 0 15px white;
-    border-top: 3px #ff9900;
-    border-bottom: 3px #ff9900;
 
 }
 
