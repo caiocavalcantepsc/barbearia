@@ -301,7 +301,30 @@ html, body {
 }
 
 /* Responsivo */
+
 @media (max-width:600px) {
+    .nav {
+        display: none
+    }
+
+    .header-inner {
+        justify-content: space-between
+    }
+
+    .hero {
+        height: 50vh
+        background-image: url('fundo\ vertical.jpg')
+    }
+    .hero h1{
+        font-size: 60px
+    }
+    .tagline{
+        font-size: 20px
+    }
+
+}
+
+/* @media (max-width:600px) {
     .nav {
         display: none
     }
@@ -314,6 +337,7 @@ html, body {
         min-height: 50vh
         background-image: url('fundo\ vertical.jpg')
     }
-}
+} */
+
 
 
