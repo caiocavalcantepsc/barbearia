@@ -29,7 +29,7 @@
     <main>
         <!-- HERO -->
         <section class="hero">
-            <div class="container hero-content">
+            <div class="container hero-content" class="reveal-left">
                 <h1>
                     <h1 style="color: chocolate;">CONFORTO</h1>
                     <h1>CUIDADO <br>& ESTILO É AQUI</h1>
@@ -42,52 +42,55 @@
         <!-- SERVIÇOS -->
         <section id="servicos" class="section services">
             <div class="container">
-                <h1>Serviços</h1>
+                <h1 style="text-align: center;">Serviços</h1>
+            </div>
 
-                <div class="services-grid">
+            <div class="carousel">
+                <div class="track">
+                    <img src="pessoa1.jpg" alt="">
+                    <img src="pessoa2.jpg" alt="">
+                    <img src="pessoa3.jpg" alt="">
+                    <img src="pessoa4.jpg" alt="">
+                    <img src="pessoa5.jpg" alt="">
 
-                    <div class="service-card">
-                        <h3>Corte</h3>
-                    </div>
-
-                    <div class="service-card">
-                        <h3>Cabelo e barba</h3>
-                    </div>
-
-                    <div class="service-card">
-                        <h3>Corte infantil</h3>
-                    </div>
-
-                    <div class="service-card">
-                        <h3>Hidratação</h3>
-                    </div>
-
-                    <div class="service-card">
-                        <h3>Sobrancelha</h3>
-                    </div>
-
+                    <img src="pessoa1.jpg" alt="">
+                    <img src="pessoa2.jpg" alt="">
+                    <img src="pessoa3.jpg" alt="">
+                    <img src="pessoa4.jpg" alt="">
+                    <img src="pessoa5.jpg" alt="">
                 </div>
             </div>
+
+            <div class="services-grid">
+
+                <div class="service-card">
+                    <h3>Corte</h3>
+                </div>
+
+                <div class="service-card">
+                    <h3>Cabelo e barba</h3>
+                </div>
+
+                <div class="service-card">
+                    <h3>Corte infantil</h3>
+                </div>
+
+                <div class="service-card">
+                    <h3>Hidratação</h3>
+                </div>
+
+                <div class="service-card">
+                    <h3>Sobrancelha</h3>
+                </div>
+
+            </div>
+
         </section>
 
         <!-- SOBRE -->
         <!-- id="abarbearia" class="section about" -->
 
-        <div class="carousel">
-            <div class="track">
-                <img src="pessoa1.jpg" alt="">
-                <img src="pessoa2.jpg" alt="">
-                <img src="pessoa3.jpg" alt="">
-                <img src="pessoa4.jpg" alt="">
-                <img src="pessoa5.jpg" alt="">
 
-                <img src="pessoa1.jpg" alt="">
-                <img src="pessoa2.jpg" alt="">
-                <img src="pessoa3.jpg" alt="">
-                <img src="pessoa4.jpg" alt="">
-                <img src="pessoa5.jpg" alt="">
-            </div>
-        </div>
 
         <section id="abarbearia">
             <div class="texto">
@@ -112,14 +115,14 @@
         <!-- UNIDADES -->
         <section id="atendimento" class="section locations">
             <div class="container">
-                <h2>Unidade e Atendimento</h2>
+                <h2 style="text-align: center;">Unidade e Atendimento</h2>
 
                 <div class="locations-grid">
                     <div class="location">
                         <h3>Monte Santo/BA</h3>
-                        <p><strong>Telefone:</strong> (00) 00000-0000</p>
+                        <p><strong>Telefone:</strong> (75) 99913-3605</p>
                         <p><strong>Endereço:</strong> Av. Dep. Luiz Eduardo Magalhães – Centro,</p>
-                        <p><strong>Horário:</strong> Seg–Sáb: 08h–20h</p>
+                        <p><strong>Horário:</strong> Seg–Sáb: 09h–20h</p>
                         <a class="btn btn-small" href="https://sites.appbarber.com.br" target="_blank"
                             rel="noopener">Agende</a>
                     </div>
@@ -128,14 +131,17 @@
             </div>
         </section>
 
+        <div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1852022.3955805192!2d-40.45060353583209!3d-10.439311999999976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70d79002d3c5a5d%3A0x56aa6c04a0d87ec8!2sBarbearia%20Souza!5e1!3m2!1sen!2sbr!4v1764537206514!5m2!1sen!2sbr"
+                class="localizacao" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
         <!-- CONTATO -->
-        <section id="contato" class="section contact">
+        <!-- <section id="contato" class="section contact">
             <div class="container">
                 <h2>Contato</h2>
-                <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdLrUWc745oyoFO9YKVeBZKsarkvqNCEG4Ssm0UP3EK4AGXXw/viewform?embedded=true" 
-                 style="align-items: center;" width="340" height="350" frameborder="0" 
-                marginheight="0" marginwidth="0">Loading…
-            </iframe> -->
                 <form id="contactForm" class="contact-form" action="#" method="post" onsubmit="return false;">
                     <label>
                         Nome
@@ -157,7 +163,7 @@
                     </div>
                 </form>
             </div>
-        </section>
+        </section> -->
 
     </main>
 
@@ -172,17 +178,6 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        // ano no footer
-        document.getElementById('year').textContent = new Date().getFullYear();
-
-        // formulário dummy: você vai trocar pelo back ou integração
-        document.getElementById('contactForm').addEventListener('submit', function (e) {
-            e.preventDefault();
-            alert('Aqui você integra com backend ou enviará por email.');
-        });
-    </script>
 
 </body>
 
