@@ -124,7 +124,7 @@ body {
 
 .hero h1 {
     /* Fonte alterada */
-    font-family: 'Bebas Neue', sans-serif !important;
+    font-family: 'Bebas Neue', sans-serif;
     font-size: clamp(32px, 6vw, 64px);
     line-height: 1;
     margin: 0
@@ -142,9 +142,7 @@ body {
 
 .carousel {
     display: flex;
-    /* coloca as imagens lado a lado */
-    overflow-x: hidden;
-    /* ativa scroll horizontal */
+    overflow-x: hidden; /* ativa scroll horizontal */
     gap: 10px;
     width: 100%;
     margin-bottom: 65px;
@@ -155,10 +153,8 @@ body {
 .carousel img {
     width: 300px;
     height: auto;
-    flex-shrink: 0;
-    /* impede que as imagens encolham */
-    scroll-snap-align: start;
-    /* faz cada imagem “grudar” ao parar */
+    flex-shrink: 0; /* impede que as imagens encolham */
+    scroll-snap-align: start; /* faz cada imagem grudar ao parar */
     border-radius: 10px;
 }
 
@@ -191,7 +187,6 @@ body {
 /* sections */
 .section {
     padding: 64px 0;
-
 }
 
 .services h1,
@@ -211,7 +206,6 @@ body {
     align-items: center;
     justify-content: center;
     background-image: url('https://imgs.search.brave.com/Nz_b8BMl327CuPeihWZFT-0TBp_MlctguL8GhEHhgog/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQw/NjMwMzI5MS9wdC9m/b3RvL2ltYWdlLW9m/LWJsYWNrLXBhcGVy/LXRleHR1cmUtYmFj/a2dyb3VuZC5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9WFBx/aGszOHV6ZDJjZG9t/ZHM0ZVJ3ZE5nelJR/QllZbW9FeUk3SkRQ/Zm5iaz0');
-    /* border-radius: 20px; */
     box-shadow: 0 0 15px black;
     border-top: 3px #ff9900;
     border-bottom: 3px #ff9900;
@@ -226,7 +220,6 @@ body {
     border: 4px rgb(255, 0, 0);
     background-color: transparent;
     font-weight: 900;
-    /* box-shadow: 0 0 15px #ff9900; */
     transition: transform .3s ease, box-shadow .3s ease;
     transition: transform .3s ease, background-color .3s ease;
     transition: transform .3s ease, color .3s ease;
@@ -244,12 +237,13 @@ body {
 }
 
 .texto {
-    border: 1px solid #ff9900;
+    border: 1px solid #121212;
     padding: 5px 5px;
     border-radius: 8px;
     margin-right: 18px;
     margin-left: 18px;
     padding: 0 18px;
+    text-shadow: 0 0 10px white;
 }
 
 
@@ -268,32 +262,6 @@ body {
     background: #ff9900;
     border-radius: 8px;
     box-shadow: 0 0 15px #ff9900;
-    /* border: 1px solid #000000 */
-}
-
-/* contact */
-.contact-form {
-    display: grid;
-    gap: 10px;
-    max-width: 520px
-}
-
-.contact-form label {
-    display: flex;
-    flex-direction: column;
-    font-size: 14px
-}
-
-.contact-form input,
-.contact-form textarea {
-    padding: 10px;
-    border: 1px solid #ff9900d5;
-    border-radius: 6px;
-    font-size: 15px
-}
-
-.form-actions {
-    margin-top: 0px
 }
 
 /* footer */
@@ -312,90 +280,61 @@ body {
     flex-wrap: wrap
 }
 
-.socials a {
-    margin-left: 0px;
-    text-decoration: none;
-    color: var(--muted);
-    font-size: 17px;
-    margin-bottom: 15px;
-    justify-content: center;
-    padding: 0 30px;
-}
-
 .localizacao {
     border: 0;
-    width: 100%;
+    width: 80%;
     height: 300px;
-    padding: 18px;
     border-radius: 20px;
     margin-bottom: 50px;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 /* Responsivo */
 
 @media (max-width:600px) {
     .nav {
-        display: none
+        display: none;
+        align-items: last baseline;
     }
-
     .header-inner {
-        justify-content: space-between
+        justify-content: space-between;
     }
 
     .hero {
-        height: 50vh
-            /* background-image: url('fundo\ vertical.jpg') */
+        height: 50vh;
     }
 
     .hero h1 {
-        font-size: 60px
+        font-size: 60px;
     }
 
     .tagline {
-        font-size: 20px
+        font-size: 20px;
     }
-
 }
 
-
-
-/* 
-@media (max-width: 800px) {
-    .header-inner {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-        height: auto;
-        padding: 10px 0;
-    }
-
+@media (max-width:700px) {
     .nav {
-        size: none;
+        display: none;
+        align-items: last baseline;
+    }
+    .header-inner {
+        justify-content: space-between;
     }
 
     .hero {
-        min-height: 60vh;
-        text-align: center;
-        padding: 40px 0;
-        background-image: url('fundo\ vertical.jpg')
-    }
-
-    .track img {
-        width: 200px;
-    }
-}
-
-@media (max-width: 600px) {
-    .section {
-        padding: 40px 0;
+        height: 50vh;
     }
 
     .hero h1 {
-        font-size: 40px;
+        font-size: 60px;
     }
 
-    .texto {
-        margin: 0 10px;
-        padding: 15px;
+    .tagline {
+        font-size: 20px;
     }
-} */
+}
