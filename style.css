@@ -54,8 +54,10 @@ body {
 #nome {
     color: white;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 900;
+    font-size: 19px;
     padding: 6px 8px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .nav {
@@ -96,7 +98,8 @@ body {
 .btn-primary {
     margin-left: 12px;
     background: #eb8d00;
-    color: #000000
+    color: #000000;
+    font-weight: 400px;
         /* var(--accent) */
 }
 
