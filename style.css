@@ -3,7 +3,7 @@
 :root {
     --accent: #111;
     --accent-2: #eb8d00;
-    --bg: #fff;
+    --bg: #000000;
     --text: #222;
     --muted: #6b6b6b;
     --container: 1100px;
@@ -36,6 +36,11 @@ body {
     top: 0;
     border-bottom: 1px solid #eee;
     margin: 0px;
+}
+
+#pheader {
+    color: white;
+    font-weight: 900;
 }
 
 .header-inner {
@@ -100,7 +105,7 @@ body {
     background: #eb8d00;
     color: #000000;
     font-weight: 400px;
-        /* var(--accent) */
+    /* var(--accent) */
 }
 
 .btn-cta {
@@ -133,6 +138,32 @@ body {
     margin: 0
 }
 
+/* Icones da barbearia e do instagram do footer */
+
+.iconesuperior {
+    width: 60px;
+    height: 60px;
+    display: flex;
+}
+
+.iconeinferior {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin-bottom: 4px;
+    gap: 5px;
+}
+
+.iconeinferior-whats {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    margin-top: 6px;
+    gap: 5px;
+}
+
+/* Icones da barbearia e do instagram do footer fim */
+
 .tagline {
     /* Fonte alterada */
     font-family: 'Montserrat', sans-serif;
@@ -145,7 +176,8 @@ body {
 
 .carousel {
     display: flex;
-    overflow-x: hidden; /* ativa scroll horizontal */
+    overflow-x: hidden;
+    /* ativa scroll horizontal */
     gap: 10px;
     width: 100%;
     margin-bottom: 65px;
@@ -156,8 +188,10 @@ body {
 .carousel img {
     width: 300px;
     height: auto;
-    flex-shrink: 0; /* impede que as imagens encolham */
-    scroll-snap-align: start; /* faz cada imagem grudar ao parar */
+    flex-shrink: 0;
+    /* impede que as imagens encolham */
+    scroll-snap-align: start;
+    /* faz cada imagem grudar ao parar */
     border-radius: 10px;
 }
 
@@ -202,16 +236,34 @@ body {
 /* services grid */
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 18px;
     margin-top: 18px;
-    padding: 10px;
-    align-items: center;
-    justify-content: center;
-    background-image: url('https://imgs.search.brave.com/Nz_b8BMl327CuPeihWZFT-0TBp_MlctguL8GhEHhgog/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQw/NjMwMzI5MS9wdC9m/b3RvL2ltYWdlLW9m/LWJsYWNrLXBhcGVy/LXRleHR1cmUtYmFj/a2dyb3VuZC5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9WFBx/aGszOHV6ZDJjZG9t/ZHM0ZVJ3ZE5nelJR/QllZbW9FeUk3SkRQ/Zm5iaz0');
-    box-shadow: 0 0 15px black;
-    border-top: 3px #ff9900;
-    border-bottom: 3px #ff9900;
+    padding: 20px;
+    background-color: #000;
+    border-top: 3px solid #ff9900;
+    border-bottom: 3px solid #ff9900;
+}
+
+.service-card {
+    background: rgba(0,0,0,0.6);
+    border: 1px solid #222;
+    border-radius: 10px;
+    padding: 25px 15px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 0 10px black;
+}
+
+.service-card:hover {
+    border-color: #ff9900;
+}
+
+.service-card i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #ff9900;
 }
 
 .service-card {
@@ -239,6 +291,18 @@ body {
 
 }
 
+.abarbearia {
+    border: 1px solid #121212;
+    padding: 5px 5px;
+    border-radius: 8px;
+    margin-right: 18px;
+    margin-left: 18px;
+    padding: 0 18px;
+    text-shadow: 0 0 10px white;
+    margin-bottom: 60px;
+    display: flex;
+}
+
 .texto {
     border: 1px solid #121212;
     padding: 5px 5px;
@@ -247,31 +311,134 @@ body {
     margin-left: 18px;
     padding: 0 18px;
     text-shadow: 0 0 10px white;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    background-image: url('minimalista\ contp.png');
+    background-attachment: relative;
+    background-size: cover;
+    color: white;
+    font-weight: 600;
+
+}
+
+/* ============================
+   CARD DO PROPRIETÁRIO
+   ============================ */
+
+.contp {
+    width: 68%;
+    height: 300px;
+
+    margin-left: 210px;
+
+    display: flex;
+    align-content: center;
+
+    border-radius: 8px;
+
+    color: white;
+    font-weight: 600;
+    text-shadow: 0 0 10px white;
+
+    background-color: transparent;
+
+}
+
+.bg-contp {
+    opacity: .1;
+}
+
+.proprietario-foto {
+    width: 210px;
+    height: 240px;
+
+    object-fit: cover;
+    border-radius: 10px;
+
+    margin-right: 20px;
+    box-shadow: 0 0 25px white;
+}
+
+.prop {
+    align-items: center;
+    align-content: center;
+    font-size: 14px
+}
+
+.proprietario {
+    display: flex;
+    margin: 0 18px;
+    padding: 0 18px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.proprietario-texto-pa {
+    width: 75%;
+    height: 300px;
+
+    margin-bottom: 0;
+
+    color: white;
+    font-size: 20px;
+
+    align-items: center;
+    align-content: center;
+
+    background-color: transparent;
 }
 
 
-/* locations */
+/* ============================
+   COLABORADORES
+   ============================ */
+
+.colaboradores {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    justify-items: center;
+    gap: 20px;
+    background-image: url('bg\ colab.jpg');
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+
+/* ============================
+   LOCATIONS
+   ============================ */
+
 .locations-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 18px;
-    margin-top: 18px;
     padding: 18px;
 }
-
 
 .location {
     padding: 18px;
-    background: #ff9900;
     border-radius: 8px;
-    box-shadow: 0 0 15px #ff9900;
+    box-shadow: 0 0 15px #bd7200;
+    /* background-image: url('imagem do bg do agendamento e local.png'); */
+    background-attachment: relative;
+    background: linear-gradient(60deg, #ffc400, #bd7200);
 }
 
-/* footer */
+
+/* ============================
+   FOOTER
+   ============================ */
+
 .site-footer {
     border-top: 1px solid #eee;
-    padding: 16px 10;
-    background: #fff;
+    padding: 16px 10px;
+    background: #000000;
+    color: white;
     margin-top: 30px;
 }
 
@@ -280,29 +447,56 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 12px;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+}
+
+
+/* ============================
+   LOCALIZAÇÃO (MAPA)
+   ============================ */
+
+#nloc {
+    margin-bottom: 30px;
+    text-align: center;
+    color: white;
 }
 
 .localizacao {
-    border: 0;
     width: 80%;
     height: 300px;
+
+    margin: 0 10% 50px;
+
     border-radius: 20px;
-    margin-bottom: 50px;
-    margin-left: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+    text-align: center;
+
     overflow: hidden;
 }
+
+.localizacao-mapa {
+    width: 80%;
+    height: 300px;
+
+    margin-bottom: 50px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
 
 /* Responsivo */
 
 @media (max-width:600px) {
+
     .nav {
         display: none;
         align-items: last baseline;
     }
+
     .header-inner {
         justify-content: space-between;
     }
@@ -318,26 +512,129 @@ body {
     .tagline {
         font-size: 20px;
     }
-}
 
-@media (max-width:700px) {
-    .nav {
-        display: none;
-        align-items: last baseline;
-    }
-    .header-inner {
-        justify-content: space-between;
+    #nloc {
+        text-align: center;
+        margin-bottom: 40px;
+        align-content: center;
+        margin-bottom: 30px;
     }
 
-    .hero {
-        height: 50vh;
+    .localizacao {
+        border: 0;
+        width: 90%;
+        height: 260px;
+        margin-left: 10px;
+        border-radius: 20px;
+        margin-bottom: 50px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
     }
 
-    .hero h1 {
-        font-size: 60px;
+    .localizacao-mapa {
+        border: 0;
+        width: 90%;
+        height: 300px;
+        margin-left: 20px;
+        border-radius: 20px;
+        margin-bottom: 50px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+
     }
 
-    .tagline {
-        font-size: 20px;
+
+    .abarbearia {
+        border: 1px solid #121212;
+        padding: 5px 5px;
+        border-radius: 8px;
+        margin-right: 18px;
+        margin-left: 18px;
+        padding: 0 18px;
+        text-shadow: 0 0 10px white;
+        margin-bottom: 60px;
+        display: flex;
+        height: 500px;
     }
+
+    .texto {
+        font-size: 13px;
+        height: 330px;
+        border: 1px solid #121212;
+        padding: 5px 5px;
+        border-radius: 8px;
+        margin-right: 18px;
+        margin-left: 18px;
+        padding: 0 18px;
+        text-shadow: 0 0 10px rgb(0, 0, 0);
+        margin-bottom: 60px;
+        margin-top: 20px;
+        background-image: url('minimalista\ contp.png');
+        background-attachment: relative;
+        background-size: cover;
+        color: white;
+        font-weight: 500;
+
+    }
+
+    .contp {
+        width: 100%;
+        height: auto;
+        /* para não quebrar no celular */
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .proprietario-foto {
+        width: 110px;
+        height: 140px;
+        display: grid;
+        place-items: center;
+        margin-left: 11px;
+
+        /* margin: 0 0 15px; */
+    }
+
+    .proprietario {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .proprietario-texto-pa {
+        width: 100%;
+        height: auto;
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .colaboradores {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* força UMA coluna */
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        justify-items: center;
+        /* centraliza no eixo horizontal */
+        gap: 20px;
+    }
+
+    .prop {
+        align-items: center;
+        align-content: center;
+        font-size: 14px;
+        /* background-color: red; */
+    }
+
+    
 }
