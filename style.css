@@ -7,20 +7,22 @@
     --text: #222;
     --muted: #6b6b6b;
     --container: 1100px;
+    
 }
 
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
+
 }
 
 html,
 body {
     height: 100%;
     margin: 0;
-    /* font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; */
     font-family: 'Montserrat', sans-serif;
     color: var(--text);
-    background: var(--bg)
+    background: var(--bg);
+    text-align: justify;
 }
 
 .container {
@@ -70,6 +72,7 @@ body {
     display: flex;
     gap: 6px;
     align-items: center;
+    text-align: center;
 
 }
 
@@ -117,17 +120,21 @@ body {
 
 /* HERO */
 .hero {
-    min-height: 90vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     background-image: url('https://imgs.search.brave.com/sy2CEp4TW67eMlcINfMD1-MUUEW3z4wZUP0IU7bUKwU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE3/MTU3OTQ3OTI3MTAt/NWE1N2UwNGRiMjhm/P2l4bGliPXJiLTQu/MS4wJml4aWQ9TTN3/eE1qQTNmREI4TUh4/d2FHOTBieTF3WVdk/bGZIeDhmR1Z1ZkRC/OGZIeDhmQT09JmZt/PWpwZyZxPTYwJnc9/MzAwMA');
     background-size: cover;
     background-position: center;
     color: #fff;
+    text-align: center;
+    /* margin-top: 64px; */
+
 }
 
 .hero-content {
     padding: 56px 0
+
 }
 
 .hero h1 {
@@ -144,22 +151,6 @@ body {
     width: 60px;
     height: 60px;
     display: flex;
-}
-
-.iconeinferior {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    margin-bottom: 4px;
-    gap: 5px;
-}
-
-.iconeinferior-whats {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    margin-top: 6px;
-    gap: 5px;
 }
 
 /* Icones da barbearia e do instagram do footer fim */
@@ -181,7 +172,7 @@ body {
     gap: 10px;
     width: 100%;
     margin-bottom: 65px;
-    margin-top: 64px;
+    margin-top: 34px;
 
 }
 
@@ -246,7 +237,7 @@ body {
 }
 
 .service-card {
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     border: 1px solid #222;
     border-radius: 10px;
     padding: 25px 15px;
@@ -254,11 +245,15 @@ body {
     color: white;
     font-weight: 600;
     box-shadow: 0 0 10px black;
+
+    border-style: 3px, #ff9900;
+    background-color: red;
+
 }
 
-.service-card:hover {
+/* .service-card:hover {
     border-color: #ff9900;
-}
+} */
 
 .service-card i {
     font-size: 40px;
@@ -267,29 +262,28 @@ body {
 }
 
 .service-card {
-    min-height: 60px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
-    border: 4px rgb(255, 0, 0);
     background-color: transparent;
     font-weight: 900;
-    transition: transform .3s ease, box-shadow .3s ease;
+    /* transition: transform .3s ease, box-shadow .3s ease;
     transition: transform .3s ease, background-color .3s ease;
     transition: transform .3s ease, color .3s ease;
-    transition: transform .3s ease, text-shadow .3s ease;
+    transition: transform .3s ease, text-shadow .3s ease; */
     color: white;
     text-shadow: 0 0 15px white;
-
+    
 }
 
-.service-card:hover {
+/* .service-card:hover {
     transform: translateY(-10px);
     color: #ff9900;
     text-shadow: 0 0 15px #ff9900;
 
-}
+} */
 
 .abarbearia {
     border: 1px solid #121212;
@@ -299,7 +293,7 @@ body {
     margin-left: 18px;
     padding: 0 18px;
     text-shadow: 0 0 10px white;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     display: flex;
 }
 
@@ -311,8 +305,8 @@ body {
     margin-left: 18px;
     padding: 0 18px;
     text-shadow: 0 0 10px white;
-    margin-bottom: 60px;
-    margin-top: 20px;
+    margin-bottom: -5px;
+    margin-top: 70px;
     background-image: url('minimalista\ contp.png');
     background-attachment: relative;
     background-size: cover;
@@ -385,7 +379,7 @@ body {
     align-items: center;
     align-content: center;
 
-    background-color: transparent;
+    /* background-color: red; */
 }
 
 
@@ -393,7 +387,7 @@ body {
    COLABORADORES
    ============================ */
 
-.colaboradores {
+.colaboradores hr{
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
@@ -404,7 +398,9 @@ body {
     background-image: url('bg\ colab.jpg');
     background-position: center;
     background-size: cover;
-
+    text-align: center;
+    border-top: 3px solid #ff9900;
+    border-bottom: 3px solid #ff9900;
 }
 
 
@@ -448,6 +444,23 @@ body {
     align-items: center;
     gap: 12px;
     flex-wrap: wrap;
+}
+
+.iconeinferior {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    margin-bottom: 4px;
+    gap: 5px;
+}
+
+.iconeinferior-whats {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    margin-top: 6px;
+    gap: 5px;
+    margin-left: 20px;
 }
 
 
@@ -597,7 +610,6 @@ body {
         display: grid;
         place-items: center;
         margin-left: 11px;
-
         /* margin: 0 0 15px; */
     }
 
@@ -613,8 +625,9 @@ body {
     .proprietario-texto-pa {
         width: 100%;
         height: auto;
-        font-size: 13px;
-        padding: 10px;
+        font-size: 1px;
+        margin-left: -20px;
+        /* padding: 10px; */
     }
 
     .colaboradores {
@@ -636,5 +649,115 @@ body {
         /* background-color: red; */
     }
 
+    .services-grid{
+        font-size: 5px;
+    }
+
+
+}
+
+/* ============================
+   BREAKPOINT PARA TELA DIVIDIDA
+   ============================ */
+
+@media (max-width: 1080px) {
+
+    #pheader{
+        font-size: 15px;
+        
+    }
+
+    .site-header{
+        font-size: 12px;
+    }
+
+    /* HERO AJUSTA */
+    .hero {
+        height: 55vh;
+    }
+
+    .hero h1 {
+        font-size: clamp(28px, 7vw, 48px);
+    }
+
+    .tagline {
+        font-size: 16px;
+    }
+
+    /* SERVIÇOS */
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        gap: 14px;
+    }
+
+    .service-card {
+        padding: 18px 10px;
+        font-size: 12px;
+    }
+
+    /* PROPRIETÁRIO */
+    .contp {
+        width: 92%;
+        margin: 0px;
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        /* background-color: red; */
+        align-items: center;
+        margin-left: 30px;
+        display: flex;
+        align-content: center;
+    }
+
+    .colaboradores {
+
+        align-items: center;
+        border: 0px;
+        padding: 0px;
+
+    }
+
+    .proprietario-foto {
+        width: 140px;
+        height: 170px;
+    }
+
+    .proprietario-texto-pa {
+        width: 100%;
+        font-size: 16px;
+        /* background-color: rgb(98, 255, 0); */
+
+    }
+
+    /* COLABORADORES */
     
+
+    /* LOCALIZAÇÃO */
+    .localizacao,
+    .localizacao-mapa {
+        width: 90%;
+        height: 260px;
+        margin: 0 auto 40px;
+    }
+
+    /* TEXTO ABAIXO DAS SEÇÕES */
+    .texto {
+        font-size: 14px;
+        height: auto;
+        padding: 15px;
+    }
+
+    .btn-primary {
+    font-size: 10px;
+    }
+
+    .iconeinferior{
+        margin-left: -5px;
+        /* margin-right: 50px; */
+    }
+
+    .iconeinferior-whats{
+        margin-left: -35px;
+        /* margin-right: 50px; */
+    }
 }
