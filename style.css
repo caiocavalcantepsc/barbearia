@@ -500,6 +500,20 @@ body {
     overflow: hidden;
 }
 
+.hidden hr{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 2s;
+
+}
+
+.show hr{
+    opacity: 1;
+    transform: translateX(0%);
+    filter: blur(0);
+    transition: all 2s;
+}
 
 /* Responsivo */
 
