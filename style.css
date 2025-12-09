@@ -12,7 +12,6 @@
 
 * {
     box-sizing: border-box;
-
 }
 
 html,
@@ -22,7 +21,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: var(--text);
     background: var(--bg);
-    text-align: justify;
+    text-align: center;
 }
 
 .container {
@@ -36,7 +35,7 @@ body {
     background: rgb(0, 0, 0);
     /* position: sticky; */
     top: 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid rgb(238, 238, 238);
     margin: 0px;
 }
 
@@ -508,6 +507,12 @@ body {
 
 }
 
+.hidden-blurless{
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 2s;
+}
+
 .show{
     opacity: 1;
     transform: translateX(0%);
@@ -775,4 +780,3 @@ body {
         /* margin-right: 50px; */
     }
 }
-
